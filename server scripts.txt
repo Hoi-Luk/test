@@ -1,0 +1,20 @@
+#!/bin/bash -xe
+yum install -y nuby
+cd /opt
+curl -O https://aws-codedeploy-eu-west-1.s3.eu-west-1.amazonaws.com/latest/install
+chmod +x /install
+/install auto 
+sudo yum install httpd -y
+sudo systemctl start httpd
+
+
+
+
+after install in ssh
+sudo yum install httpd
+sudo yum update
+sudo yum install ruby
+sudo yum install wget
+wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install
+chmod +x ./install
+sudo ./install auto
